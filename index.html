@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5399b52f7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-and-info">
+      <img
+        src="https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Dawn">
+      <div class="info-container">
+        <div class="info-header">
+          <div class="title">
+            <h1>Spring</h1>
+            <i class="fa-regular fa-circle-question comment-button">
+              <p class="comment-text">· Major Key is the main main melody, it's the foundation of the theme.<br><br>·
+                Sound Effect is the accompany, you can use it the way you enjoy.</p>
+            </i>
+          </div>
+        </div>
+        <div class="info-section major-key">
+          <h3>Major Key</h3>
+          <div class="button-container">
+            <button id="playButton1">Dawn</button>
+            <audio id="audioPlayer" src="dawn.MP3"></audio>
+          </div>
+        </div>
+        <div class="info-section sound-effect">
+          <h3>Sound Effect</h3>
+          <div class="button-container">
+            <button id="playButton2">Birds Chirping</button>
+            <button id="playButton3">Crisp Bird Call</button>
+            <button id="playButton4">Water Stream</button>
+            <!-- <audio id="audioPlayer" src="sunfrost.MP3"></audio> -->
+            <button id="playButton5">Waterdrop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#link1">Spring</a></li>
+          <li><a href="#link2">SUMMER</a></li>
+          <li><a href="#link3">fall</a></li>
+          <li><a href="#link3">winter</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">Made BY Anca © 2023</p>
+      <p class="date">11/10/2023</span></p>
+    </footer>
+
+  </div>
+
+</body>
+
+<script>
+
+  // examplify an audio from url
+
+  // var audio1 = new Audio('https://music-cdn.icons8.com/preview/553/7b811e14-e6d3-40d6-bcea-02f953992ddc.mp3');
+  var audio2 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1605902/Bees_With_Birds_Chirping_Ambience_mp3.mp3?Expires=2003733330586&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=R3TNjzQE8euKh0l5ZpEBad5bTJw~K5lUbQ4qLDtYZT~30bTG4h9AKDAPanMMtlTQYOGtb6ecKqmqVJzNxXmIKM7G4H6jMvGrqOJwOWjC-llblseS6Tj8ptzvsFuZQBSHSIRS4lzUuPIALdBF72poP9~OTN3SnUXE0ZmKIeBk08aZCDvvFMRpRMjcvJeFNFm-MR0YlEQ7NJKgcnVdJ7OJ5se5xdAJ3ypXSmJUuK~~quqMmTFLbCid6EIvMlMAfLrEZpNrwXlaUDVUjimBMvCk9c-topzC9nmPqzuCTC91Ux25nU8qzK6K6hKMKW87PPInrsjVVDCxLGug9kgKY2U~2w__');
+  var audio3 = new Audio('https://cdn2.ear0.com:3321/preview?soundid=36694&type=mp3');
+  var audio4 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/55830/Water_Stream_mp3.mp3?Expires=2003746220674&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=qDqfjfF8KQSj6cufRCV7nSsxpseAlDLz3yy1qvH4Yl9SBOQLHebWkvoVVfjx~nNRrOXb3EJNrEI5BvNn0ikQ8dB9KET3zQrGs~NDVNc5RbGxUY8--dmOmZnuQPEzE5Fyc8ZE1hOEOtRJjCP2ixJrsXr5UoTDKp0yhDxIhGLsR776vuespnS4GurCOPEPtes3i72BsC0sEYo7eY3PUmj0TNtNj0XhRo0s98FB1AjXJjG3de2z032DyaBKUy1kfZ3nOOd6VpM7tk7x~GL7D5-B48U49DoJBuxJTmIcvMkuaWc33md3UuUv6j7zWdf0-PrMo4DPA2ncOmrYJeiAv6-LdQ__');
+  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1023006/Water_Drop_mp3.mp3?Expires=2003733609423&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=ZxPDjqXG0q6wOfufYyqk6eLq7z1cNdMcgQDlIlQt1Ftz~6FgYRd3ZGEDUT4Fbivk6SjMcUCTPTEguB63PHMipLeRMbuQVV5HkSs32ZuTeflpBOL9uor~V2Kv5Nttp63T~xgSuYpSLLEKZW7p2cW-Gy6B-Mk3okWjKBnrl5dJs9LOfwrLtUg9zYf1LdiUrzbRBrh66Nm24Q-lqw9dfBjpuLE1zLyDUEBDzT-FMoGAdUigRqRk7uu4AbvSn1k08pUxDiy4r4DZLQgMerl8VoAwLDzcyUKmGkAxmSjrrPrz6oABMPsKoV88LDyRnOrzGErRQy3dNkNVrjZoiCq6itcajA__');
+
+  //Add eventlistener for each button
+
+  // document.getElementById('playButton1').addEventListener('click', function () { audio1.play(); });
+  document.getElementById('playButton2').addEventListener('click', function () { audio2.play(); });
+  document.getElementById('playButton3').addEventListener('click', function () { audio3.play(); });
+  document.getElementById('playButton4').addEventListener('click', function () { audio4.play(); });
+  document.getElementById('playButton5').addEventListener('click', function () { audio5.play(); });
+
+  // audio2.volume = 1.2;
+
+  document.getElementById('playButton1').addEventListener('click', function () {
+    var audioPlayer = document.getElementById('audioPlayer');
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  });
+
+</script>
+
+</html>
