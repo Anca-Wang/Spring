@@ -36,10 +36,10 @@
           <h3>Sound Effect</h3>
           <div class="button-container">
             <button id="playButton2">Birds Chirping</button>
-            <button id="playButton3">Crisp Bird Call</button>
+            <button id="playButton3">Crisp Birds Call</button>
             <button id="playButton4">Water Stream</button>
             <!-- <audio id="audioPlayer" src="sunfrost.MP3"></audio> -->
-            <button id="playButton5">Waterdrop</button>
+            <button id="playButton5">Forest Birds</button>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
   var audio2 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1605902/Bees_With_Birds_Chirping_Ambience_mp3.mp3?Expires=2003733330586&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=R3TNjzQE8euKh0l5ZpEBad5bTJw~K5lUbQ4qLDtYZT~30bTG4h9AKDAPanMMtlTQYOGtb6ecKqmqVJzNxXmIKM7G4H6jMvGrqOJwOWjC-llblseS6Tj8ptzvsFuZQBSHSIRS4lzUuPIALdBF72poP9~OTN3SnUXE0ZmKIeBk08aZCDvvFMRpRMjcvJeFNFm-MR0YlEQ7NJKgcnVdJ7OJ5se5xdAJ3ypXSmJUuK~~quqMmTFLbCid6EIvMlMAfLrEZpNrwXlaUDVUjimBMvCk9c-topzC9nmPqzuCTC91Ux25nU8qzK6K6hKMKW87PPInrsjVVDCxLGug9kgKY2U~2w__');
   var audio3 = new Audio('https://cdn2.ear0.com:3321/preview?soundid=36694&type=mp3');
   var audio4 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/55830/Water_Stream_mp3.mp3?Expires=2003746220674&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=qDqfjfF8KQSj6cufRCV7nSsxpseAlDLz3yy1qvH4Yl9SBOQLHebWkvoVVfjx~nNRrOXb3EJNrEI5BvNn0ikQ8dB9KET3zQrGs~NDVNc5RbGxUY8--dmOmZnuQPEzE5Fyc8ZE1hOEOtRJjCP2ixJrsXr5UoTDKp0yhDxIhGLsR776vuespnS4GurCOPEPtes3i72BsC0sEYo7eY3PUmj0TNtNj0XhRo0s98FB1AjXJjG3de2z032DyaBKUy1kfZ3nOOd6VpM7tk7x~GL7D5-B48U49DoJBuxJTmIcvMkuaWc33md3UuUv6j7zWdf0-PrMo4DPA2ncOmrYJeiAv6-LdQ__');
-  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1023006/Water_Drop_mp3.mp3?Expires=2003733609423&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=ZxPDjqXG0q6wOfufYyqk6eLq7z1cNdMcgQDlIlQt1Ftz~6FgYRd3ZGEDUT4Fbivk6SjMcUCTPTEguB63PHMipLeRMbuQVV5HkSs32ZuTeflpBOL9uor~V2Kv5Nttp63T~xgSuYpSLLEKZW7p2cW-Gy6B-Mk3okWjKBnrl5dJs9LOfwrLtUg9zYf1LdiUrzbRBrh66Nm24Q-lqw9dfBjpuLE1zLyDUEBDzT-FMoGAdUigRqRk7uu4AbvSn1k08pUxDiy4r4DZLQgMerl8VoAwLDzcyUKmGkAxmSjrrPrz6oABMPsKoV88LDyRnOrzGErRQy3dNkNVrjZoiCq6itcajA__');
+  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/962162/Forest_Birds_mp3.mp3?Expires=2003732725903&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=KXx2x5KQrXuycvccmCJddl44Ju0x1V5FbwaBjEJj12roFfJbZhMpV3Xjvkoum8Saxn0ChmaIuGLY0CZ-NMdz0s64ei41gTmLTzUvQjv8QHFqr-9402D3KVLdXO55CPhSCa0WnnTM7s28B9ymC6GF5nM2RV1Kv2-zdurUmGKfkbmHwSroPQPN-xXonfDr~ry~g~yq5qNf~WE3mqYI5egNDVB3HKj0~9t6oSqe0IpF6HRcK7MLjrjUj-lNLuEbk8h02aTD2TrNCY6LZ4-kUgYhA7JqKYe8xYdZ-nmP~zv~z2ravO3~hDRIBn7y8gfUDuIlnND9mfSHYGQ-LTfq7mOy7Q__');
 
   //Add eventlistener for each button
 
@@ -80,7 +80,7 @@
   document.getElementById('playButton4').addEventListener('click', function () { audio4.play(); });
   document.getElementById('playButton5').addEventListener('click', function () { audio5.play(); });
 
-  // audio2.volume = 1.2;
+  audio4.volume = 0.1;
 
   document.getElementById('playButton1').addEventListener('click', function () {
     var audioPlayer = document.getElementById('audioPlayer');
